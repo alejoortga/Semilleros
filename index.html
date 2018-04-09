@@ -28,7 +28,7 @@
     <!-- Navegación-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Fecripe</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Fecrife</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -189,16 +189,17 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Información de los semilleros</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title" id="myModalLabel">Información de los semilleros</h4>
       </div>
       <div class="modal-body">
         El semillero
       </div>
     </div>
   </div>
+</div>
 </div>
 
     <section class="features" id="semillerosS">
@@ -271,11 +272,74 @@
     </section>
 
 <!--inscripción-->
+
+
+<div class="contenedor-modal">
+<div class="modal fade" id="inscripcionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+
+    <h4 class="modal-title" id="myModalLabel" >¡Inscribete!</h4>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+  Llena los siquientes campos para que que nos podamos contactar contigo.
+
+<!--Contacto -->
+<section>
+    <div class="container">
+        <div class="container">
+
+        </div>
+        <div class="container">
+            <form role="form" id="Formulario" action="../php/contacto2.php" method="POST">
+                <div class="form-group">
+                    <label class="control-label" for="Nombre">Nombres</label>
+                    <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Introduzca su nombre" required autofocus />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="Motivo">Motivo de Contacto</label>
+                    <select name="Motivo" class="form-control">
+                        <option value="Consulta General">Consulta General</option>
+                        <option value="Quienes somos">Quienes somos</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="Empresa">Universidad</label>
+                    <input type="text" class="form-control" id="Universidad" name="Universidad " placeholder="Introduzca el nombre de su Universidad" required />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="Correo">Dirección de Correo Electrónico</label>
+                    <input type="email" class="form-control" id="Correo" name="Correo" placeholder="Introduzca su correo electrónico" required />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="Mensaje">Mensaje</label>
+                    <textarea rows="5" cols="30" class="form-control" id="Mensaje" name="Mensaje" placeholder="Introduzca su mensaje" required ></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" value="Enviar">
+                    <input type="reset" class="btn btn-default" value="Limpiar">
+                </div>
+                <div id="respuesta" style="display: none;"></div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+  </div>
+</div>
+</div>
+</div>
+
     <section class="cta" id="cta">
       <div class="cta-content">
         <div class="container">
           <h2>Para de soñar.<br>Empieza a crear.</h2>
-          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Unete a nosotros! </a>
+          <a href="#" class="btn btn-outline btn-xl js-scroll-trigger" data-toggle="modal" data-target="#inscripcionModal">Unete a nosotros! </a>
         </div>
       </div>
       <div class="overlay"></div>
@@ -308,13 +372,13 @@
 
     <footer>
       <div class="container">
-        <p>&copy; Your Website 2018. All Rights Reserved.</p>
+        <p>&copy; Sitio web 2018. Todos los derechos reservados</p>
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="#">Privacy</a>
+            <a href="#">Privacidad</a>
           </li>
           <li class="list-inline-item">
-            <a href="#">Terms</a>
+            <a href="#">Terminos</a>
           </li>
           <li class="list-inline-item">
             <a href="#">FAQ</a>
