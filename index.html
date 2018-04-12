@@ -9,6 +9,7 @@
     <meta name="Cristian Forero, Felipe Galicia, Felipe Garcia" content="">
 
     <title>Fecrife</title>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -267,7 +268,60 @@
               </div>
             </div>
           </div>
+          <!--<div>-->
+              <table id="example" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Id Semillero</th>
+                        <th>Semillero</th>
+                        
+                        <th>Descripcion</th>
+                        <th>Lider</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Desarrollo de aplicaciones</td>
+                    <td>Metodos para desarrollo de aplicaciones moviles</td>
+                    <td>Gilberto</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Realidad virtual</td>
+                      <td>herramientas para el desarrollo productos de realidad aumentada</td>
+                      <td>John</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Programación</td>
+                        <td>Programación orientada a objetos</td>
+                        <td>Juan Carlos</td>
+                      </tr>
+                     
+                        <tr>
+                            <td>4</td>
+                            <td>Diseño de video juegos</td>
+                            <td>Estandar y herramientas</td>
+                            <td>Jhon</td>
+                          </tr>
+                   
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Id Semillero</th>
+                        <th>Semillero</th>
+                        
+                        <th>Descripcion</th>
+                        <th>Lider</th>
+                    </tr>
+                </tfoot>
+            </table>
+            
+         <!-- </div>-->
         </div>
+        
       </div>
     </section>
 
@@ -327,6 +381,7 @@
             </form>
         </div>
     </div>
+    
 </section>
 
 
@@ -369,7 +424,8 @@
         </ul>
       </div>
     </section>
-
+    
+ 
     <footer>
       <div class="container">
         <p>&copy; Sitio web 2018. Todos los derechos reservados</p>
@@ -385,15 +441,23 @@
           </li>
         </ul>
       </div>
-    </footer>
-
-    <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <script src="js/new-age.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    </footer>
+    
+  
+    
+    <script>
+        $(document).ready(function() {
+        $('#example').DataTable();
+        } );
+      </script>
   </body>
 
 </html>
